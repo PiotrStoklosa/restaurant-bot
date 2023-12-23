@@ -1,0 +1,150 @@
+version: "3.1"
+
+nlu:
+  - intent: opening_hours
+    examples: |
+      - Show me open hours
+      - What are your opening hours?
+      - Can you provide me with your daily operating schedule?
+
+  - intent: opening_hours_on_particular_day
+    examples: |
+      - Is the restaurant open on [Monday](day) at [14](hour) [PM](time) 
+      - Will the restaurant be open on [Tuesday](day) evening at [20](hour)
+      - Are you open this [Wednesday](day) at [1](hour) [PM](time)?
+      - Does the restaurant open at [11:20](hour) on [Thursdays](day)?
+      - Will you be open on [Friday](day) night at [10](hour) [PM](time)?
+      - Is the restaurant open this [Saturday](day) at [12:15](hour) [PM](time)?
+      - Will you be serving customers on [Sunday](day) morning at [9:00](hour) ?
+
+  - intent: list_menu
+    examples: |
+      - Show me menu
+      - Can you show me whole menu?
+      - Could you please provide me with the full menu?
+      - May I see the complete menu options?
+      - Would you be able to share the entire menu with me?
+      - Can you give me details on all the items available on the menu?
+      - Is it possible to get a rundown of the entire menu?
+      - Could you list all the dishes included in the menu?
+      - May I have a comprehensive overview of the menu offerings?
+      - Would you mind sharing the complete list of menu items?
+      - Can you provide me with the full scope of the menu?
+      - Is it possible to see a complete breakdown of the menu options?
+
+  - intent: place_an_order
+    examples: |
+      - Can I order two(quantity) portions of [spaghetti carbonara](food)?
+      - I want to order [tiramisu](food) [without tomatoes](additional_request)
+      - Could I have the [pizza](food) [with half pepperoni and half mushrooms](additional_request)
+      - I want [2](amount) [Lasagne](food) [with water](additional_request)
+      - Can I order [pizza](food) [without cheese](additional_request)?
+      - Can I order a [burger](food) [without mayonnaise](additional_request)?
+      - Can I order a [salad](food) [without tomatoes](additional_request)?
+      - Can I order [3](amount) [pasta](food) [without onions](additional_request)?
+      - Can I order [chicken](food) [without spices](additional_request)?
+      - Can I order [sushi](food) [without wasabi](additional_request)?
+      - Can I order [coffee](food) [without sugar](additional_request)?
+      - Can I order [Two](amount) [tea](food) [without honey](additional_request)?
+      - Can I order [1](amount) [sandwich](food) [without lettuce](additional_request)?
+      - Can I order [soup](food) [without garlic](additional_request)?
+      - Can I order a [smoothie](food) [without yogurt](additional_request)?
+      - Can I order [Five](amount) [pancakes](food) [without syrup](additional_request)?
+      - Can I order a [wrap](food) [without onions](additional_request)?
+      - Can I order [3](amount) [burritos](food) [without beans](additional_request)?
+      - Can I order a [milkshake](food) [without whipped cream](additional_request)?
+      - Can I order [fish](food) [without lemon](additional_request)?
+      - Can I order a [omelette](food) [without peppers](additional_request)?
+      - Can I order a [bagel](food) [without cream cheese](additional_request)?
+      - Can I order a [steak](food) [without sauce](additional_request)?
+      - Can I order [fries](food) [without salt](additional_request)?
+      
+
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - good morning
+      - good evening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?

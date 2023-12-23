@@ -1,0 +1,67 @@
+version: "3.1"
+
+stories:
+
+- story: show me opening hours
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: opening_hours
+  - action: show_open_hours
+
+- story: the restaurant is open on a given date/time
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: opening_hours_on_particular_day
+  - action: show_opening_hours_on_particular_day
+
+- story: show a menu
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: list_menu
+  - action: action_list_menu
+
+- story: order food
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: place_an_order
+  - action: action_order_food
+
+- story: list menu and order food
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: list_menu
+  - action: action_list_menu
+  - intent: place_an_order
+  - action: action_order_food
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
